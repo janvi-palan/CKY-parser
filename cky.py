@@ -64,7 +64,6 @@ def parser(grammar, sentence, non_terms):
 						if prob > (score[i][i+1][A]):
 							score[i][i+1][A] = prob
 							back[i][i+1][A] = B
-							# print prob," ",back[i][i+1][A]
 							added = True
 
 	for span in range(2,num_words+1):
